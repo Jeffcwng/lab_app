@@ -8,8 +8,5 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', 'wanderful.views.home', name='home'),
-
-
-
-    
+    url(r'^test/', 'wanderful.views.test', name='home')
 )
