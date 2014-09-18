@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-class User(models.Model):
+class Traveler(models.Model):
     firstname = models.CharField(max_length=20)
     lastname = models.CharField(max_length=20)
     email = models.EmailField()
@@ -15,14 +15,14 @@ class User(models.Model):
         return u"{}".format(self.username)
 
 
-class UserList(models.Model):
+class TravelList(models.Model):
     listname = models.CharField(max_length=30)
-    user = models.ForeignKey(User, related_name='userlists')
+    user = models.ForeignKey(Traveler, related_name='travellists')
 
 
 class Location(models.Model):
     continent = models.CharField(max_length=30)
     country = models.CharField(max_length=30)
     city = models.CharField(max_length=50)
-    userlist = models.ManyToManyField(UserList, related_name='locations')
+    userlist = models.ManyToManyField(TravelList, related_name='locations')
     hotel = models.TextField(null=True)

@@ -24,7 +24,7 @@ class Migration(migrations.Migration):
             bases=(models.Model,),
         ),
         migrations.CreateModel(
-            name='User',
+            name='Traveler',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('firstname', models.CharField(max_length=20)),
@@ -39,11 +39,11 @@ class Migration(migrations.Migration):
             bases=(models.Model,),
         ),
         migrations.CreateModel(
-            name='UserList',
+            name='TravelList',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('listname', models.CharField(max_length=30)),
-                ('user', models.ForeignKey(related_name=b'userlists', to='wanderful.User')),
+                ('user', models.ForeignKey(related_name=b'travellists', to='wanderful.Traveler')),
             ],
             options={
             },
@@ -52,7 +52,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='location',
             name='userlist',
-            field=models.ManyToManyField(related_name=b'locations', to='wanderful.UserList'),
+            field=models.ManyToManyField(related_name=b'locations', to='wanderful.TravelList'),
             preserve_default=True,
         ),
     ]

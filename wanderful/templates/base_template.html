@@ -1,0 +1,45 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> {% block title %} {% endblock title %} </title>
+    <script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-theme.min.css' %}">
+{#    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">#}
+    <link rel="SHORTCUT ICON" href="http://jngland.com/favicon.ico">
+    <script language="JavaScript">
+        da_image = new Image();
+        da_image.src="http://jngland.com/favicon.ico";
+    </script>
+
+
+
+    </head>
+
+    <body margintop="0" marginleft="0">
+
+    <!-- start header section -->
+    <header>
+        <div align="left" style="width: 1200px; height: 200px;">
+                <img src={% static 'img/header_bkgd_1200x200.jpg' %}>
+        </div>
+    </header>
+
+    <!-- end header section -->
+        {% block content %}
+
+
+
+
+        {% endblock content %}
+    <!-- start footer section -->
+{% block footer %} {% endblock footer %}
+
+{#     <img align="bottom" src={% static 'img/footer_bkgd_1200x30.jpg' %}>#}
+
+    <!-- end footer section -->
+    </body>
+</html>
