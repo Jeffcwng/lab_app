@@ -1,0 +1,26 @@
+{% extends 'base_template.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+<div style="margin: 50px 50px 50px 50px; font-size: 18px;">
+<hr>
+    {% for location in locations %}
+         <a href="{% url "view_location" location.id %}">{{ location.city }}</a>
+        <br>
+    {% endfor %}
+
+<br>
+<br>
+<br>
+<hr>
+
+<a href="{% url "new_location" %}">Add new location</a>
+<br>
+<a href="{% url "home" %}">Back to home</a>
+
+
+</div>
+
+
+{% endblock content %}

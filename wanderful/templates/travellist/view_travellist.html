@@ -1,0 +1,31 @@
+{% extends 'base_template.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+<div style="margin: 50px 50px 50px 50px; font-size: 18px;">
+
+<hr>
+<h1>{{ travellist.listname}}</h1>
+
+   {% for list in travellist %}
+       {{ list.country }} {{ list.city }}
+        <br>
+    {% endfor %}
+
+
+<br>
+<br>
+<br>
+
+<hr>
+<a href="{% url "home" %}">Back to home</a><br>
+<a href="{% url "travellist" %}">Back to travel list</a>
+
+
+
+
+</div>
+
+
+{% endblock content %}

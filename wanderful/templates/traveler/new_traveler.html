@@ -1,0 +1,21 @@
+{% extends 'base_template.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+<div style="margin: 50px 50px 50px 50px; font-size: 18px;">
+
+
+<h1>Add new traveler</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Add new traveler">
+</form>
+
+
+
+</div>
+
+
+{% endblock content %}

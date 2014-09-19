@@ -1,17 +1,14 @@
 {% extends 'base_template.html' %}
 {% load staticfiles %}
+{% load leaflet_tags %}
 
 {% block content %}
 
 <div style="margin: 50px 50px 50px 50px; font-size: 18px;">
 
-
-Welcome to Wanderful!
-
-
+        {% leaflet_map "yourmap" callback="window.map_init_basic" %}
 
 </div>
 
 
 {% endblock content %}
-
