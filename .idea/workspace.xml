@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0f3a0785-f474-4888-90b3-aa9789c09bb6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/lab_app.iml" afterPath="$PROJECT_DIR$/.idea/lab_app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local_settings.py" afterPath="$PROJECT_DIR$/local_settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wanderful/models.py" afterPath="$PROJECT_DIR$/wanderful/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lab_app/settings.py" afterPath="$PROJECT_DIR$/lab_app/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lab_app/urls.py" afterPath="$PROJECT_DIR$/lab_app/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wanderful/templates/location/view_location.html" afterPath="$PROJECT_DIR$/wanderful/templates/location/view_location.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wanderful/views.py" afterPath="$PROJECT_DIR$/wanderful/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="0f3a0785-f474-4888-90b3-aa9789c09bb6" name="Default" comment="" />
     <ignored path="lab_app.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -495,7 +485,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19033675" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19033675" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22081219" sideWeight="0.50035036" order="7" side_tool="true" content_ui="tabs" />
