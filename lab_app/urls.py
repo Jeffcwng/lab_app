@@ -3,6 +3,7 @@ from django.contrib import admin
 from django.templatetags.static import static
 from lab_app import settings
 from wanderful.models import Location
+from django.conf.urls.static import static
 
 
 urlpatterns = patterns('',
@@ -12,7 +13,8 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', 'wanderful.views.home', name='home'),
-    url(r'^testing/$', 'wanderful.views.testing', name='testing'),
+
+
     url(r'^testing3/$', 'wanderful.views.testing3', name='testing3'),
     url(r'^profile/$', 'wanderful.views.profile', name='profile'),
 
@@ -48,7 +50,7 @@ urlpatterns = patterns('',
         name='password_reset_confirm'),
     url(r'^reset/done/$', 'django.contrib.auth.views.password_reset_complete', name='password_reset_complete'),
 
-)
 
-# if settings.DEBUG:
-#     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL, document_root=settings.MEDIA_ROOT)
+
+

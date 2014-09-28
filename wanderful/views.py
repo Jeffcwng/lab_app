@@ -1,18 +1,16 @@
 from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import render, redirect, render_to_response
 from django.core.mail import EmailMultiAlternatives
-from django.shortcuts import render, redirect
+
 from django.contrib.auth.decorators import login_required
 from wanderful.forms import TravelerForm, LocationForm, TravelListForm
 from geolocation.google_maps import GoogleMaps
 from wanderful.models import *
 # Create your views here.
+#test github
 
 def home(request):
     return render_to_response("home.html")
-
-def testing(request):
-    return render_to_response("testing.html")
 
 def testing2(request):
     return render_to_response("map.html")
@@ -57,6 +55,7 @@ def location(request):
 def view_location(request, location_id):
     location = Location.objects.get(id=location_id)
     data = {'location': location}
+    # image = Location.image.url
     return render_to_response("location/view_location.html", data)
 
 def new_location(request):
@@ -79,15 +78,18 @@ def new_location(request):
 
 
 ### travel list
+@login_required
 def travellist(request):
     travellists = TravelList.objects.all()
     return render_to_response("travellist/travellist.html", {'travellists': travellists})
 
+@login_required
 def view_travellist(request, travellist_id):
     travellist = Location.objects.all().filter(userlist=travellist_id)
     data = {'travellist': travellist}
     return render_to_response("travellist/view_travellist.html", data)
 
+@login_required
 def new_travellist(request):
       # If the user is submitting the form
     if request.method == "POST":
@@ -127,6 +129,7 @@ def register(request):
         'form': form,
     })
 
+@login_required
 def map(request):
 
     #all_locations = Location.objects.all()

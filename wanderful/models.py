@@ -31,6 +31,8 @@ class Location(models.Model):
     traveler = models.ManyToManyField(Traveler, related_name='locations')
     userlist = models.ManyToManyField(TravelList, related_name='locations')
     hotel = models.TextField(null=True)
+    image = models.ImageField(upload_to='location_images', blank=True, null=True)
+
 
     def __unicode__(self):
         return u"{}".format(self.city)
